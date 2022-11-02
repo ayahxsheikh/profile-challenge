@@ -12,8 +12,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
+  width: 100%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
   padding: var(--standard-padding);
@@ -43,7 +43,7 @@ header nav a {
   margin: 0 0 0 10px;
   text-decoration:none; 
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 header nav a:hover {
@@ -75,8 +75,8 @@ main {
   margin-top: 20px;
   padding: 30px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas: 'avatar';
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: 'avatar about-me';
   font-size: 26px;
 }
 
@@ -100,8 +100,14 @@ main {
 
 #avatar {
   grid-area: avatar;
-  height: 90%;
-  width: 80%;
+  height: auto;
+  width: 100%;
+  }
+
+  p.about-me {
+    grid-area: about-me;
+    font-size: 18px;
+    text-align: center;
   }
 
   #work1 {
